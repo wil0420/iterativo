@@ -33,12 +33,26 @@ function contarconsonantes(texto){
 function contarpalabrasrep(texto){
     if(texto.length > 0){
         var palabras = texto.split(" ")
-        console.log(palabras)
         var  count = {};
         palabras.forEach(function(i) {
-
-             count[i] = (count[i]|| 0) + 1;          
+             count[i] = (count[i] || 0) + 1;          
             });
-        console.log(count);
+
+            var maximo = 0;
+            var palabrarep = ""
+            for(var palabra in count){
+                if(maximo < count[palabra]){
+                    maximo = count[palabra];
+                    palabrarep = palabra
+                }
+            }
+            var data = {
+                "palabra" : palabrarep,
+                "cantidad" : maximo
+            }
+
+            return data
+    }else{
+        return false
     }
 }
