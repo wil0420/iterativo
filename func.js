@@ -29,3 +29,16 @@ function contarconsonantes(texto){
         }
 }
 }
+
+function contarpalabrasrep(texto){
+    if(texto.length > 0){
+        var palabras = texto.split(" ")
+        console.log(palabras)
+        var  count = {};
+        palabras.forEach(function(i) {
+
+             count[i] = (count[i]|| 0) + 1;          
+            });
+        console.log(count);
+    }
+}

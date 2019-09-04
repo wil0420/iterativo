@@ -3,6 +3,7 @@ $( "#enviar" ).click(function() {
         var resvocales = contarvocales(texto);
         var respalabras = contarpalabras(texto)
         var resconsonantes = contarconsonantes(texto)
+        var palabrasrep = contarpalabrasrep(texto)
 
         if(resvocales){
             $('.alert-light .vocales').text("Numero de vocales encontradas: " + resvocales)
