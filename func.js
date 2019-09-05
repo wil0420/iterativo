@@ -1,3 +1,4 @@
+//iteracion 1
 function contarvocales(texto){
     var numeroVocales = texto.match(/[aeiou]/gi);
     if(numeroVocales != null){
@@ -7,7 +8,7 @@ function contarvocales(texto){
     }
     
 }
-
+//iteracion 2
 function contarpalabras(texto){
     if(texto.length > 0){
         var numeropalabras = texto.split(" ")
@@ -18,7 +19,7 @@ function contarpalabras(texto){
         }
 }
 }
-
+//iteracion 3
 function contarconsonantes(texto){
     if(texto.length > 0){
         var numeroconsonantes = texto.match(/[^aeiou ]/gi);
@@ -29,7 +30,7 @@ function contarconsonantes(texto){
         }
 }
 }
-
+//iteracion 4
 function contarpalabrasrep(texto){
     if(texto.length > 0){
         var palabras = texto.split(" ")

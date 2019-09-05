@@ -21,8 +21,8 @@ $( "#enviar" ).click(function() {
             $('.alert-light .consonantes').text("Numero de consonantes encontradas: " + 0)
         }
 
-        if(palabrasrep){
-            $('.alert-light .rep').text("la palabra "+ palabrasrep.palabra + " se repite "+ palabrasrep.cantidad + "Veces")
+        if(palabrasrep.cantidad > 1){
+            $('.alert-light .rep').text("la palabra "+ palabrasrep.palabra + " se repite "+ palabrasrep.cantidad + " Veces")
         }else{
             $('.alert-light .rep').text("Palabras repetidas: " + 0)
         }
